@@ -19,7 +19,7 @@ parser.add_argument('--config',  '-c',
                     dest="filename",
                     metavar='FILE',
                     help =  'path to the config file',
-                    default='configs/cvae.yaml')
+                    default='configs/bbvae.yaml')
 
 args = parser.parse_args()
 with open(args.filename, 'r') as file:

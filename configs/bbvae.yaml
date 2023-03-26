@@ -1,6 +1,6 @@
 model_params:
   name: 'BetaVAE'
-  in_channels: 3
+  in_channels: 1
   latent_dim: 128
   loss_type: 'B'
   gamma: 10.0
@@ -8,7 +8,7 @@ model_params:
   Capacity_max_iter: 10000
 
 data_params:
-  data_path: "Data/"
+  data_path: "/root/autodl-tmp/hlhdata/ttftopng/simfang_STXINGKA"
   train_batch_size: 64
   val_batch_size:  64
   patch_size: 64
@@ -22,10 +22,10 @@ exp_params:
   manual_seed: 1265
 
 trainer_params:
-  gpus: [1]
-  max_epochs: 10
+  gpus: [0]
+  max_epochs: 200
 
 logging_params:
-  save_dir: "logs/"
+  save_dir: "/root/autodl-tmp/hlhdata/CelebA/log"
   manual_seed: 1265
   name: 'BetaVAE'
